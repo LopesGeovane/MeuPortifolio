@@ -1,5 +1,5 @@
 var typed = new Typed((".skills"),{
-    strings : ["Programador", "Futuro engenheiro mecatronico", "Estudante"],
+    strings : ["Programador...", "Futuro engenheiro mecatrônico...", "Estudante...", "Aspirante a designer..." ],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000,

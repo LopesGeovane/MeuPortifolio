@@ -1,6 +1,6 @@
 #About{
     height: 100vh;
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     display: flex;
     justify-content: space-evenly;
 }
@@ -8,10 +8,17 @@
     height: 97vh;
     width: 40vw;
 }
+
+#About img {
+    max-width: 80%;
+    border-radius: 50%;
+    margin-top: 80px;
+}
+
 #About #text-about{
     height: calc(97vh-150px);
     width: 40vw;
     font-size: 1.7em;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 80px;
 }

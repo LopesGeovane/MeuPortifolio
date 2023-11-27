@@ -9,7 +9,7 @@
   margin-bottom: 15px;
   margin-left: 90px;
   font-size: 350%;
-  width: 10em;
+  width: 8em;
   color: #efefef;
   background: #3d4142;
 	border-radius: 10em;
@@ -117,8 +117,8 @@
 @-webkit-keyframes open-close-banner {
     0% {width: 1.5em; opacity: 0;}
     2% {width: 1.5em; opacity: 1;}
-    8% {width: 10em;}
-    80% {width: 10em;}
+    8% {width: 8em;}
+    80% {width: 8em;}
     90% {width: 1.5em; opacity: 1;
       -webkit-transform: rotate(0deg);
     }
@@ -131,8 +131,8 @@
   @-moz-keyframes open-close-banner {
     0% {width: 1.5em; opacity: 0;}
     2% {width: 1.5em; opacity: 1;}
-    8% {width: 10em;}
-    80% {width: 10em;}
+    8% {width: 8em;}
+    80% {width: 8em;}
     90% {
       width: 1.5em; 
       opacity: 1;
@@ -147,8 +147,8 @@
   @keyframes open-close-banner {
     0% {width: 1.5em; opacity: 0;}
     2% {width: 1.5em; opacity: 1;}
-    8% {width: 10em;}
-    80% {width: 10em;}
+    8% {width: 8em;}
+    80% {width: 8em;}
     90% {
       width: 1.5em; 
       opacity: 1;

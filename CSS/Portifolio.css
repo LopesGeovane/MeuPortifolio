@@ -1,70 +1,70 @@
 #Portifolio{
-    height: 100vh;
-    background-color: var(--cor4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-color: var(--cor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Portifolio #container{
-    height: 80%;
-    width: 80%;
-    display: block;
+  height: 80%;
+  width: 80%;
+  display: block;
 }
 
 #Portifolio #container h1{
-    font-size: 2.5em;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #portifolio{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .projetos{
-    background-color: rgb(153, 153, 153);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
-    height: 170px;
-    width: 250px;
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
+  background-color: rgb(153, 153, 153);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  height: 170px;
+  width: 250px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .projetos::before{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.41), red);
-  }
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.41), red);
+}
 
 .projetos:hover::before, .projetos:hover h2{
-  animation: subir 0.3s ease forwards;
+animation: subir 0.3s ease forwards;
 }
 
 
 .projetos h2{
-    position: absolute;
-    top: 150%; /* Inicialmente fora da visão */
-    left: 50%;
-    transform: translate(-50%, 300%);
-    color: white;
-    font-size: 18px;
-    transition: opacity 0.3s ease;
-  }
+  position: absolute;
+  top: 150%; /* Inicialmente fora da visão */
+  left: 50%;
+  transform: translate(-50%, 300%);
+  color: white;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
 
 
-  @keyframes subir {
-    to {
-      top: 0;
-      opacity: 1;
-    }
+@keyframes subir {
+  to {
+    top: 0;
+    opacity: 1;
   }
+}

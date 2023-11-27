@@ -35,7 +35,7 @@ body{
     overflow-x: hidden;
 }
 
-
+/* home */
 
 header{
     position: fixed;
@@ -155,7 +155,7 @@ p{
     justify-content: left;
 }
 
-
+/* about */
 
 #About{
     height: 100vh;
@@ -182,6 +182,8 @@ p{
     margin-top: 80px;
 }
 
+
+/* Skills */
 
 #Skills{
     height: 100vh;
@@ -241,6 +243,8 @@ p{
     height: 50%;
 }
 
+
+/* Portifolio */
 
 #Portifolio{
     height: 100vh;
@@ -313,7 +317,7 @@ p{
     }
   }
 
-
+/* contact */
 
 
 #Contact{
@@ -384,8 +388,13 @@ p{
 #info-contact a{
     margin-top: 50px;
     text-decoration: none;
-    color: white;
-    font-size: 0.7em;
+    color: var(--corB);
+    font-size: 0.8em;
+}
+
+#info-contact a :hover{
+    color: var(--cor2);
+    font-size: 1.1em;
 }
 
 ::-webkit-scrollbar {

@@ -1,5 +1,5 @@
 #Contact{
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +26,7 @@
 }
 #submit{
     width: 25%;
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     border: none;
     margin-top: 10px;
     padding: 8px 3px;
@@ -36,7 +36,7 @@
     transition: .3s;
 }
 #submit:hover{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     transform: scale(1.07);
 }
 
@@ -48,7 +48,7 @@
     border-radius: 15px;
     margin-top: 20vh;
     font-size: 1.5em;
-    color: var(--cor0);
+    color: var(--cor2);
 }
 #info-contact h1{
     margin-top: 50px;
@@ -66,6 +66,11 @@
 #info-contact a{
     margin-top: 50px;
     text-decoration: none;
-    color: white;
-    font-size: 0.7em;
+    color: var(--corB);
+    font-size: 0.8em;
+}
+
+#info-contact a :hover{
+    color: var(--cor2);
+    font-size: 1.1em;
 }

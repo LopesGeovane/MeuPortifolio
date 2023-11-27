@@ -2,12 +2,19 @@
 
 
 :root{
-    --cor0:#BF1F3C;
+    /* --cor0:#BF1F3C;
     --cor1:#6E65A6;
     --cor2:#1B3651;
     --cor3:#4EA69D;
     --cor4: #1A7E8A;
-    --cor5: #ffcc00;
+    --cor5: #ffcc00; */
+
+    --cor0: #0D0D0D;
+    --cor1: #000000;
+    --cor2: #0082A6;
+    --cor3: #175F73;
+    --corB: white;
+
 }
 
 
@@ -17,8 +24,32 @@
     font-family: Arial, sans-serif;
 }
 
-body{
-    background-color: var(--cor2);
-    color: white;
+
+html{
+    scroll-behavior: smooth;
 }
 
+body{
+    background-color: var(--cor0);
+    color: white;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+ ::-webkit-scrollbar-track {
+    background: #1b1819;        /* color of the tracking area */
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);    /* color of the scroll thumb */
+    border-radius: 0px;       /* roundness of the scroll thumb */
+  }
+
+
+  em{
+    color: var(--cor2);
+    font-size: 1.2em;
+  }
