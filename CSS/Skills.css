@@ -1,0 +1,56 @@
+#Skills{
+    height: 100vh;
+}
+
+#Skills #skill-titulo{
+    color: #fff;
+    background-color: #1B3651;
+    height: 150px;
+}
+
+#Skills #skill-titulo h2{
+    transform: translate(20%,120%);
+    text-shadow: 0px 0px 10px rgb(255, 255, 0, 0.5);
+    font-size: 3em;
+}
+
+#container{
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: row; 
+}
+
+
+#Skills #skill-1{
+    color: #fff;
+    border-radius: 50px;
+    height: 100%;
+    width: 50%;
+    
+}
+
+#Skills #skill-right{
+    width: 50%;
+    height: 100%;
+    margin-top: -50px;
+}
+
+#Skills #skill-2{
+    color: #fff;
+    height: 100%;
+    font-size: 1.5em;
+    overflow: auto;
+    font-size: 15px;
+}
+
+.porcetagem{
+    font-size: 3em;
+    transform: translate(0,-250%);
+    margin: 0;
+    padding: 0;
+}
+
+#Skills #skill-3{
+    color: #fff;
+    height: 50%;
+}

@@ -1,0 +1,17 @@
+#About{
+    height: 100vh;
+    background-color: var(--cor4);
+    display: flex;
+    justify-content: space-evenly;
+}
+#About #foto{
+    height: 97vh;
+    width: 40vw;
+}
+#About #text-about{
+    height: calc(97vh-150px);
+    width: 40vw;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 150px;
+}

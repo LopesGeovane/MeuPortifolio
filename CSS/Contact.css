@@ -1,0 +1,71 @@
+#Contact{
+    background-color: var(--cor2);
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+#name, #email,#message{
+    width: 70%;
+    margin-right: 30%;
+    margin-top: 20px;
+    padding: 20px 10px;
+    background-color: var(--cor3);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+#name:valid, #email:valid, #message:valid {
+    background-color: #ffffff; /* Altere para a cor desejada */
+}
+#submit{
+    width: 25%;
+    background-color: var(--cor0);
+    border: none;
+    margin-top: 10px;
+    padding: 8px 3px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+#submit:hover{
+    background-color: var(--cor3);
+    transform: scale(1.07);
+}
+
+
+#info-contact{
+    height: 70vh;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-top: 20vh;
+    font-size: 1.5em;
+    color: var(--cor0);
+}
+#info-contact h1{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#info-contact h4{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#info-contact #outros{
+    display: flex;
+    justify-content: left;
+    font-size: 1.7em;
+}
+#info-contact a{
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+}
