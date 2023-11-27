@@ -18,7 +18,34 @@
 #About #text-about{
     height: calc(97vh-150px);
     width: 40vw;
-    font-size: 1.7em;
+    font-size: 2vw;
     text-align: center;
     margin-top: 80px;
+}
+
+@media (max-width:1050px){
+    #About #foto{
+        max-width: 30%;
+    }
+    #About #text-about{
+        width: 60vw;
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width:770px){
+    #About #foto{
+        width: 0;
+        opacity: 0;
+    }
+    #About #text-about{
+        width: 80%;
+        font-size: 3.7vw;
+    }
+}
+
+@media (max-width:590px){
+    #About #text-about{
+        font-size: 4.5vw;
+    }
 }
