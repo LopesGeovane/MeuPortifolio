@@ -26,8 +26,8 @@
 }
 
 .projetos{
-  background-color: rgb(153, 153, 153);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  background-color: white;
+  box-shadow: 0px 0px 50px rgba(14, 80, 85);
   height: 170px;
   width: 250px;
   margin: 10px;
@@ -59,6 +59,12 @@ animation: subir 0.3s ease forwards;
   color: white;
   font-size: 18px;
   transition: opacity 0.3s ease;
+}
+
+
+#Portifolio img{
+  margin-left: -30px;
+  margin-top: 5px;
 }
 
 
