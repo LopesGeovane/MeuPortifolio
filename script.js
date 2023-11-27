@@ -24,7 +24,7 @@ function createChart(ctx, percent) {
     });
   }
 
-  var habilidades = { comunicativo: 78, dedicado: 82, inteligente: 68 };
+  var habilidades = { comunicativo: 78, dedicado: 82, inteligente: 100 };
 
   createChart(document.getElementById('comunicativoChart').getContext('2d'), habilidades.comunicativo, 'Comunicativo');
   createChart(document.getElementById('dedicadoChart').getContext('2d'), habilidades.dedicado, 'Dedicado');
