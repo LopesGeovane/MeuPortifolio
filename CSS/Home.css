@@ -27,6 +27,7 @@ header nav a{
     display: flex;
     justify-content: center;
     text-shadow: 2px 2px 2px black;
+    margin-right: 10px;
 }
 header nav a:hover{
     color: var(--cor2);
@@ -115,4 +116,18 @@ p{
     margin-top: 20px;
     display: flex;
     justify-content: left;
+}
+
+
+
+@media (max-width:700px){
+    nav{
+        opacity:0;
+    }
+    #profile img {
+        opacity:0;
+    }
+    #info{
+        width: 100%;
+    }
 }

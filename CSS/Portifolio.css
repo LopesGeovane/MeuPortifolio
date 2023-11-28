@@ -23,6 +23,8 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 90%;
+  overflow-y: auto;
 }
 
 .projetos{
@@ -30,7 +32,7 @@
   box-shadow: 0px 0px 50px rgba(14, 80, 85);
   height: 170px;
   width: 250px;
-  margin: 10px;
+  margin-top: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -74,3 +76,6 @@ animation: subir 0.3s ease forwards;
     opacity: 1;
   }
 }
+
+
+

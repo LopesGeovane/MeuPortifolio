@@ -41,11 +41,13 @@
     #About #text-about{
         width: 80%;
         font-size: 3.7vw;
+        margin-top: 40px;
     }
 }
 
 @media (max-width:590px){
     #About #text-about{
         font-size: 4.5vw;
+        margin-top: 20px;
     }
 }
