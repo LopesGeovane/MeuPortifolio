@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Navbar.css">
     <link rel="stylesheet" href="CSS/Home.css">
     <link rel="stylesheet" href="CSS/About.css">
     <link rel="stylesheet" href="CSS/Skills.css">
     <link rel="stylesheet" href="CSS/Portifolio.css">
     <link rel="stylesheet" href="CSS/Contact.css">
-    <link rel="stylesheet" href="CSS/achievement.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="Image/Logotipo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,24 +16,27 @@
     <title>GVLopes</title>
 </head>
 <body id="home">
-    <header>
-        <div id="logo">
-            <h2>GVLopes.</h2>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Portifolio">Portifolio</a>
-            <a href="#Contact">Contato</a>
+    <header class="header">
+        <nav class="nav">
+            <div id="logo">
+                <div id="logo2"></div>
+                <h2>GVLopes.</h2>
+            </div>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a class="click" href="#home">Home</a></li>
+                <li><a class="click" href="#About">About</a></li>
+                <li><a class="click" href="#Skills">Skills</a></li>
+                <li><a class="click" href="#Portifolio">Portifolio</a></li>
+                <li><a class="click" href="#Contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section id="Home">
             <div id="info">
-                <h3>Oi,</h3>
-                <h2> Sou <em>Geovane,</em></h2>
+                <h2>Hi, Sou <em>Geovane</em>,</h2>
                 <h3>
                     <span class="skills"></span>
                 </h3>
@@ -57,6 +60,8 @@
             </div>
         </section>
 
+<!-- --------------------------------------       About       ------------------------------------ --> 
+
         <section id="About">
             <div id="foto"><img src="Image/perfil.jpg" alt=""></div>
             <div id="text-about">
@@ -69,204 +74,274 @@
 
 <!-- --------------------------------------       SKILLS       ------------------------------------ -->        
 
-        <section id="Skills">
+<section id="Skills">
 
-            <div id="skill-titulo">
-                <h2>
-                    Skills
-                </h2>
+
+    <div id="skill-content">
+
+        <div id="skill-left">
+            <div id="skill-description">
+
+                <div id="skill-titulo">
+                    <h2>
+                        <em>Skills</em>
+                    </h2>
+                </div>
+
+                Minhas habilidades abrangem diversas áreas, consolidando-me como
+                versátil e apto a enfrentar desafios complexos. Aqui está um breve resumo das minhas principais
+                competências:
+                Experiência sólida em Python, C e C++, capacitando-me a criar soluções eficientes, desde aplicações
+                simples até projetos complexos.
+                Iniciei minha jornada com foco em lógica difusa (fuzzy), ampliando minhas capacidades para explorar
+                inovações em vários contextos.
+                Domínio de HTML, CSS e Javascript para criar websites intuitivos, responsivos e visualmente
+                atraentes.
+                Habilidades em CoreDraw, Photoshop e Illustrator, com uma abordagem centrada no usuário para criar
+                elementos visuais impactantes e eficazes.
+                Breve experiencia com embarcados e telecomunicações.
             </div>
 
-            <div id="container">
-                <div id="skill-1">
-                        <div style="margin-left: 30px;">Minhas habilidades abrangem diversas áreas, consolidando-me como versátil e apto a enfrentar desafios complexos. Aqui está um breve resumo das minhas principais competências:
-                        Experiência sólida em Python, C e C++, capacitando-me a criar soluções eficientes, desde aplicações simples até projetos complexos.
-                        Iniciei minha jornada com foco em lógica difusa (fuzzy), ampliando minhas capacidades para explorar inovações em vários contextos.
-                        Domínio de HTML, CSS e Javascript para criar websites intuitivos, responsivos e visualmente atraentes.
-                        Habilidades em CoreDraw, Photoshop e Illustrator, com uma abordagem centrada no usuário para criar elementos visuais impactantes e eficazes.
-                        Breve experiencia com embarcados e telecomunicações.
-                    
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="display: inline-block; margin: 10px;">
-                                <canvas id="comunicativoChart" width="200" height="200"></canvas>
-                                <div>Flexivel</div>
-                                <div class="porcetagem">78%</div>
-                            </div>
-                            <div style="display: inline-block; margin: 10px;">
-                                <canvas id="dedicadoChart" width="200" height="200"></canvas>
-                                <div>Comunicativo</div>
-                                <div class="porcetagem">82%</div>
-                            </div>
-                            <div style="display: inline-block; margin: 10px;">
-                                <canvas id="inteligenteChart" width="200" height="200"></canvas>
-                                <div>Dedicado</div>
-                                <div class="porcetagem">100%</div>
-                            </div>
-                        </div>
-                    
-                    
-                </div>
 
-                <div id="skill-right">
-                    <div id="skill-2">
-                        <div class="achievement-banner">
-                            <div class="achievement-icon">
-                                <span class="icon"><span class="icon-trophy"><i class='bx bxl-python'></i></span></span>
+        </div>
+
+        <div id="skill-trophy">
+
+            <section class="slider">
+                <div class="container">
+
+                    <div class="slider" data-slider>
+
+                        <div class="slider-title">
+                            <div>
+                                <p class="title">Minhas</p>
+                                <p class="main_title">conquistas</p>
                             </div>
-                            <div class="achievement-text">
-                                <p class="achievement-notification">Achievement unlocked</p>
-                                <p class="achievement-name">120 horas &ndash; Python</p>
+
+                            <div class="slider__buttons">
+                                <button class="slider__button" data-slider-prev disabled>
+                                    <i class='bx bxs-chevron-left'></i>
+                                </button>
+                                <button class="slider__button" data-slider-next>
+                                    <i class='bx bxs-chevron-right' ></i>
+                                </button>
                             </div>
                         </div>
 
-                    <div class="achievement-banner">
-                        <div class="achievement-icon">
-                            <span class="icon"><span class="icon-trophy"><i class='bx bxl-c-plus-plus'></i></span></span>
-                        </div>
-                        <div class="achievement-text">
-                            <p class="achievement-notification">Achievement unlocked</p>
-                            <p class="achievement-name">60 horas &ndash; C</p>
-                        </div>
-                
-                    </div>
+                        <ul class="slider__track" data-slider-track>
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Python</h1>
+                                        <i class='bx bxl-python bx-flip-horizontal'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Javascript</h1>
+                                        <i class='bx bxl-javascript'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>C</h1>
+                                        <i class='bx bxl-c-plus-plus'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>C++</h1>
+                                        <i class='bx bxl-c-plus-plus'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>HTML</h1>
+                                        <i class='bx bxl-html5'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>CSS</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Logica difusa (fuzzy)</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>CoreDraw</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Photoshop</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Illustrator</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>60 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>Ingles</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>90 horas</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>CSS</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>Medalha de prata - OBMEP</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>CSS</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>Medalha de bronze - OBMEP</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slide">
+                                    <div class="card">
+                                        <i class='bx bxs-trophy bx-tada bx-flip-horizontal'></i>
+                                        <h1>CSS</h1>
+                                        <i class='bx bxl-css3'></i>
+                                        <p>2º medalha de bronze - OBMEP</p>
+                                    </div>
+                                    <div class="slide_content">
+                                        <p><i class='bx bx-trophy'>250 XP</i></p>
+                                    </div>
+                                </div>
+                            </li>
 
 
-                    <div class="achievement-banner">
-                        <div class="achievement-icon">
-                            <span class="icon"><span class="icon-trophy"><i class='bx bxl-c-plus-plus'></i></span></span>
-                        </div>
-                        <div class="achievement-text">
-                            <p class="achievement-notification">Achievement unlocked</p>
-                            <p class="achievement-name">60 &ndash; C++</p>
-                        </div>
-                
-                    </div>
+                        </ul>
 
+                        <!-- <div class="btns">
+                            <button>SHOW ALL</button>
+                        </div> -->
 
-                    <div class="achievement-banner">
-                        <div class="achievement-icon">
-                            <span class="icon"><span class="icon-trophy"><i class='bx bxl-html5' ></i></span></span>
-                        </div>
-                        <div class="achievement-text">
-                            <p class="achievement-notification">Achievement unlocked</p>
-                            <p class="achievement-name">25G &ndash; HTML</p>
-                        </div>
                     </div>
-
-                    <div class="achievement-banner">
-                        <div class="achievement-icon">
-                            <span class="icon"><span class="icon-trophy"><i class='bx bxl-css3'></i></span></span>
-                        </div>
-                        <div class="achievement-text">
-                            <p class="achievement-notification">Achievement unlocked</p>
-                            <p class="achievement-name">25G &ndash; CSS</p>
-                        </div>
-                    </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bxl-javascript' ></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">25G &ndash; Javascript</p>
-                    </div>
-            
                 </div>
+            </section>
 
+        </div>
+    </div>
 
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bxs-terminal'></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">25G &ndash;  Lógica difusa(fuzzy)</p>
-                    </div>
-            
-                </div>
+</section>
 
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-images'></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">25G &ndash; CoreDraw</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-images'></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">25G &ndash; Photoshop</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-images'></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">25G &ndash; Illustrator</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-book-open'></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">90 horas &ndash; Ingles</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-math'></i></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">Medalha de bronze &ndash; OBMEP</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-math'></i></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">2º medalha de bronze &ndash; OBMEP</p>
-                    </div>
-                </div>
-
-                <div class="achievement-banner">
-                    <div class="achievement-icon">
-                        <span class="icon"><span class="icon-trophy"><i class='bx bx-math'></i></i></span></span>
-                    </div>
-                    <div class="achievement-text">
-                        <p class="achievement-notification">Achievement unlocked</p>
-                        <p class="achievement-name">Medalha de prata &ndash; OBMEP</p>
-                    </div>
-                </div>
-
-
-                </div>
-                    
-                </div>
-            </div>
-
-        </section>
-
-<!-- --------------------------------------       PORTIFOLIO       --------------------------------------- --> 
+<!-- --------------------------------------     PORTIFOLIO   -------------------------------------- --> 
 
 
         <section id="Portifolio">
@@ -350,6 +425,17 @@
 
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="script.js"></script>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const click = document.querySelectorAll(".click");
+            const nav = document.querySelector(".nav");
+      
+            hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+            
+            click.forEach((click) => {
+                click.addEventListener("click", () => nav.classList.remove("active"));
+            });
+        </script>
     </main>
 </body>
 </html>

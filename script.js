@@ -8,24 +8,44 @@ var typed = new Typed((".skills"),{
 
 
 
-function createChart(ctx, percent) {
-    new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        datasets: [{
-          data: [percent, 100 - percent],
-          backgroundColor: ['#0082A6', '#00000050'],
-          borderWidth: 0
-        }]
-      },
-      options: {
-        cutout: '80%'
-      }
+const slider = document.querySelector("[data-slider]");
+
+const track = slider.querySelector("[data-slider-track]");
+const prev = slider.querySelector("[data-slider-prev]");
+const next = slider.querySelector("[data-slider-next]");
+
+if (track) {
+  prev.addEventListener("click", () => {
+    next.removeAttribute("disabled");
+
+    track.scrollTo({
+      left: track.scrollLeft - track.firstElementChild.offsetWidth,
+      behavior: "smooth"
     });
-  }
+  });
 
-  var habilidades = { comunicativo: 78, dedicado: 82, inteligente: 100 };
+  next.addEventListener("click", () => {
+    prev.removeAttribute("disabled");
 
-  createChart(document.getElementById('comunicativoChart').getContext('2d'), habilidades.comunicativo, 'Comunicativo');
-  createChart(document.getElementById('dedicadoChart').getContext('2d'), habilidades.dedicado, 'Dedicado');
-  createChart(document.getElementById('inteligenteChart').getContext('2d'), habilidades.inteligente, 'Inteligente');
+    track.scrollTo({
+      left: track.scrollLeft + track.firstElementChild.offsetWidth,
+      behavior: "smooth"
+    });
+  });
+
+  track.addEventListener("scroll", () => {
+    const trackScrollWidth = track.scrollWidth;
+    const trackOuterWidth = track.clientWidth;
+
+    prev.removeAttribute("disabled");
+    next.removeAttribute("disabled");
+
+    if (track.scrollLeft <= 0) {
+      prev.setAttribute("disabled", "");
+    }
+
+    if (track.scrollLeft === trackScrollWidth - trackOuterWidth) {
+      next.setAttribute("disabled", "");
+    }
+  });
+}

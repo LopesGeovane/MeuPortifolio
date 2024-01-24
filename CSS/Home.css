@@ -1,56 +1,6 @@
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    padding: 10px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    z-index: 1000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.05));
-}
-header nav{
-    margin-right: 150px;
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-shadow: 2px 2px 2px black;
-    margin-right: 10px;
-}
-header nav a:hover{
-    color: var(--cor2);
-    font-size: 25px;
-}
-header nav a::before{
-    content: "";
-    width: 0px;
-    height: 2.5px;
-    position: absolute;
-    bottom: -5px;
-    background-color: var(--cor2);
-    transition: .3s;
-}
-header nav a:hover::before{
-    width: 60px;
-}
-
-
 #Home {
     height: 100vh;
     width: 92vw;
-    transform: translateY(150px);
     display: flex;
     justify-content: space-evenly;
 }
@@ -59,6 +9,7 @@ header nav a:hover::before{
 #profile {
     width: 30%;
     padding: 0;
+    margin-top: 150px;
 }
 #profile img {
     max-width: 100%;
@@ -69,12 +20,13 @@ header nav a:hover::before{
 #info {
     width: 50%;
     font-size: 1.8em;
+    margin-top: 150px;
 }
 #info #curriculo a {
     color: var(--corB);
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.6em;
+    font-size: 1.5rem;
     background-color: var(--cor3);
     padding: 5px;
     margin-right: 10px;
@@ -85,13 +37,13 @@ header nav a:hover::before{
     background-color: var(--cor2);
 }
 
-h2{
+#Home h2{
     margin-bottom: 10px;
 }
 
-p{
+#Home p{
     margin-top: 20px;
-    font-size: 0.7em;
+    font-size: 1.5rem;
 }
 
 
@@ -100,7 +52,7 @@ p{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    font-size: 1.6em;
+    font-size: 3rem;
 }
 .icon-box a{
     color: var(--cor3);
@@ -108,7 +60,7 @@ p{
 }
 .icon-box a :hover{
     color: var(--cor2);
-    font-size: 1.15em;
+    font-size: 3.2rem;
 }
 
 
@@ -119,15 +71,30 @@ p{
 }
 
 
+@media (max-width: 600px) {
+    #profile{
+        display: none;
+    }
 
-@media (max-width:700px){
-    nav{
-        opacity:0;
+    #Home{
+        background-image: url('https://raw.githubusercontent.com/LopesGeovane/MeuPortifolio/main/Image/perfil.jpg');
+        background-position-x: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
     }
-    #profile img {
-        opacity:0;
-    }
+    
     #info{
         width: 100%;
+        margin: 0;
+        padding-top: 70px;
+        padding-inline: 40px;
+        background-color: #00000077;
     }
+
+    html{
+        font-size: 14px;
+    }
+    
 }
+
