@@ -77,7 +77,7 @@
     }
 
     #Home{
-        background-image: url('https://raw.githubusercontent.com/LopesGeovane/MeuPortifolio/main/Image/perfil.jpg');
+        background-image: url("../Image/perfil.png");
         background-position-x: right;
         background-size: cover;
         background-repeat: no-repeat;
@@ -89,7 +89,7 @@
         margin: 0;
         padding-top: 70px;
         padding-inline: 40px;
-        background-color: #00000077;
+        background-color: #000000bb;
     }
 
     html{
