@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 90%;
+  height: 80%;
   overflow-y: auto;
 }
 

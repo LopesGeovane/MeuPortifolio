@@ -9,7 +9,7 @@
 #profile {
     width: 30%;
     padding: 0;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 #profile img {
     max-width: 100%;
@@ -20,7 +20,7 @@
 #info {
     width: 50%;
     font-size: 1.8em;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 #info #curriculo a {
     color: var(--corB);

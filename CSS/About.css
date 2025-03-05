@@ -3,24 +3,24 @@
     width: 100vw;
     background-color: var(--cor1);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #About #foto{
     height: 100%;
-    width: 40%;
+    width: 45%;
 }
 
 #About img {
     max-width: 80%;
     border-radius: 50%;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #About #text-about{
     height: 100%;
-    width: 40%;
+    width: 45%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #About #text-about h1{
